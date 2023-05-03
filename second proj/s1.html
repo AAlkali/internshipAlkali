@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ahmad's Site</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="s1.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Alkali</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Education">Education</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+	
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Ahmed Mohammed Alkali</h3>
+            <h3>I am a <span class="multiple-text"></span></h3>
+            <p> This is a Simple Website i Made for my Internship at Darussalam Computers</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+
+            </div>
+            <a href="#about" class="btn" >See More</a>
+        </div>
+        <div class="himg">
+            <img src="imgs/pr1.png">
+        </div>
+
+    </section>
+
+
+    <section class="about" id="about">
+    
+        <div class="abcont">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Ahmed Mohammed Alkali</h3>
+            <p>
+              My name is Ahmed, a 20-year-old Nigerian student currently studying in Rzeszow, Poland. at the University 
+              Of Information Technology and Management (UITM). In the field of Information technology Software 
+              Engineering. Additionally, my abilities extend to some programming languages like C++, Python, Html, Css and Javascript.
+              Working with people 
+              from diverse backgrounds has provided me with a deep understanding and awareness of how to be
+              an excellent teamplayer in addtion has helped me develop good communication skills.
+            </p>
+
+            <button onclick="showInfo()">My Data</button>
+            <div id="info"></div>
+        </div>
+        <div class="himg">
+            <img src="imgs/pro.png">
+
+        </div>
+    </section>
+
+
+    <section class="Hobbies" id="Hobbies">
+        <h2 class="heading">My<span> Hobbies</span></h2>
+        <div class="Hobbies-container">
+
+            <div class="Hobbies-box">
+                <img src="imgs/foot.jpg" alt="">
+                <div class="Hobbies-layer">
+                    <h4>Football</h4>
+                </div>
+            </div>
+            
+            <div class="Hobbies-box">
+                <img src="imgs/bask.webp" alt="">
+                <div class="Hobbies-layer">
+                    <h4>Basketball</h4>
+                </div>
+            </div>
+
+
+            <div class="Hobbies-box">
+                <img src="imgs/bx.jpg" alt="">
+                <div class="Hobbies-layer">
+                    <h4>boxing</h4>
+                </div>
+            </div>
+
+            <div class="Hobbies-box">
+                <img src="imgs/gaming.webp" alt="">
+                <div class="Hobbies-layer">
+                    <h4>Gaming</h4>
+                </div>
+            </div>
+
+            <div class="Hobbies-box">
+                <img src="imgs/mv.jpg" alt="">
+                <div class="Hobbies-layer">
+                    <h4>Movies & Series</h4>
+                </div>
+            </div>
+
+            <div class="Hobbies-box">
+                <img src="imgs/read.jpg" alt="">
+                <div class="Hobbies-layer">
+                    <h4>Reading</h4>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="Education" id="Education">
+        <div class="section-title">
+        <h2 class="heading">My<span> Education</span></h2>
+        </div>
+        <div class="Education-container">
+              <div class="Education-box">
+                <i class='bx bx-bus-school' ></i>
+
+                  <h3>Primary</h3>
+                  <p>
+                    Funtaj International School is located in Abuja, the capital city of Nigeria. 
+                    The school is situated in a serene and conducive environment that is ideal for learning. The school offers a British/Nigerian curriculum and provides education to students from nursery to secondary school. 
+                    The school has a reputation for providing high-quality education, and its graduates have gone on to excel in various fields.
+                  </p>
+              </div>
+                
+              <div class="Education-box">
+                <i class='bx bxs-school'></i>
+                <h3>High School</h3>
+                <p>
+                  Nigerian Tulip International College is located in Abuja, the capital city of Nigeria. The school is situated in a spacious and well-equipped campus that provides a conducive environment for learning. The school offers a Turkish/Nigerian curriculum and provides education to students from primary to secondary school. The school is known for 
+                  its rigorous academic standards and comprehensive extracurricular activities, which help students develop their skills and interests.
+                </p>
+            </div>
+
+            <div class="Education-box">
+              <i class='bx bxs-graduation' ></i>
+              <h3>University</h3>
+              <p>
+                The University of Information Technology Management is located in Rzsezow, Poland. The university offers
+                 undergraduate and graduate programs in information technology management. The university is equipped with state-of-the-art facilities and experienced faculty who provide students with a high-quality education. 
+                The university's curriculum is designed to prepare students for careers in the fast-growing field of information technology management.
+              </p>
+            </div>
+
+        </div>
+        <button style="margin: 35px;" onclick="toggleSkills()">My Skills</button>
+            <div id="skills"  style="display: none;">
+                <div class="section-title">
+                    <div class="skill-box">
+                    <span class="title">C++</span>
+                    <div class="skill-bar">
+                        <span class="skill-per c">
+                        <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="skill-box">
+                    <span class="title">Python</span>
+                    <div class="skill-bar">
+                        <span class="skill-per python">
+                        <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="skill-box">
+                    <span class="title">JavaScript</span>
+                    <div class="skill-bar">
+                        <span class="skill-per javascript">
+                        <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="skill-box">
+                    <span class="title">CSS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                        <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="skill-box">
+                    <span class="title">HTML</span>
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                        <span class="tooltip">85%</span>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+    </section>
+
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Questions ?? <span>Contact Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="Submit" value="Send message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Alkali | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+
+        </div>
+        
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="s1.js"></script>
+</body>
+</html>
